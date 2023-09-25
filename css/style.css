@@ -10,12 +10,38 @@ body {
     -moz-animation: gradient 100s infinite; */
 }
 
-
-
-h1 {
+h1,
+p {
     font-family: 'Xanh Mono', monospace;
     color: #0C009C;
     font-style: italic;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 15px;
+}
+
+#cover {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    transition: 0.3s;
+    cursor: default;
+}
+
+.cover_text {
+    cursor: default;
+
+}
+
+
+#i {
+
     font-size: 30px;
     position: absolute;
     bottom: 20px;
@@ -26,10 +52,7 @@ h1 {
 
 }
 
-p {
-    font-family: 'Xanh Mono', monospace;
-    font-style: italic;
-    color: #0C009C;
+#info_text {
     font-size: 15px;
     position: absolute;
     bottom: 28px;
@@ -83,8 +106,8 @@ p {
 
 
 #bubbles>img {
-    width: 10vw;
-    height: 10vw;
+    width: 11vw;
+    height: 11vw;
     object-fit: cover;
     transition: 0.8s cubic-bezier(.16, .75, .27, .9);
 }

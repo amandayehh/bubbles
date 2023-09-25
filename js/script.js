@@ -17,7 +17,7 @@ document.addEventListener('mouseover', function (event) {
         event.target.classList.remove('fadeout');
 
         event.target.classList.add('fadein');
-        event.target.style.transform = "translate(" + getRandomInt(-4, 4) + "vw ," + getRandomInt(-4, 4) + "vw)";
+        event.target.style.transform = "translate(" + getRandomInt(-5, 5) + "vw ," + getRandomInt(-5, 5) + "vw)";
         event.target.style.transform += "rotate(" + getRandomInt(-30, 30) + "deg)";
 
         setTimeout(function () {
@@ -57,4 +57,11 @@ function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function hideCover() {
+    document.getElementById("cover").classList.add('fadeout');
+    document.getElementById("cover").style.display = "none";
+
+
 }
