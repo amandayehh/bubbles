@@ -1,4 +1,4 @@
-let total = 100;
+let total = 200;
 for (let i = 0; i < total; i++) {
     let img = document.createElement('img');
     let randInt = getRandomInt(1, 18);
@@ -23,7 +23,7 @@ document.addEventListener('mouseover', function (event) {
         setTimeout(function () {
             event.target.classList.remove('fadein');
             event.target.classList.add('fadeout');
-        }, 1200);
+        }, getRandomInt(800, 1500));
 
         //get audio file & play
         var audio = document.getElementsByClassName("audio")[getRandomInt(0, 13)];
