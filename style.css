@@ -1,0 +1,23 @@
+body {
+    overflow: hidden;
+}
+
+#bubbles {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+
+#bubbles>img {
+    width: 10vw;
+    height: 10vw;
+    object-fit: cover;
+    opacity: 100%;
+    transition: 0.3s;
+}
+
+#bubble:hover {
+    opacity: 100%;
+}
