@@ -36,7 +36,10 @@ document.addEventListener('mouseover', function (event) {
 
 function showInfo() {
     document.getElementById("i").classList.add('fadeout');
+
     document.getElementById("info_text").style.display = "inherit";
+    document.getElementById("info_text").style.zIndex = "202";
+
     document.getElementById("info_text").classList.remove('fadeout')
     document.getElementById("info_text").classList.add('fadein')
 
@@ -45,7 +48,7 @@ function showInfo() {
 function hideInfo() {
     document.getElementById("info_text").classList.add('fadeout')
     document.getElementById("info_text").classList.remove('fadein')
-    document.getElementById("info_text").style.display = "none";
+    document.getElementById("info_text").style.zIndex = "-1";
 
 
     document.getElementById("i").classList.remove('fadeout');
