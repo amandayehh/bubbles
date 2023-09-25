@@ -28,6 +28,8 @@ document.addEventListener('mouseover', function (event) {
         //get audio file & play
         var audio = document.getElementsByClassName("audio")[getRandomInt(0, 13)];
         audio.play();
+        var playBack = (Math.random() * (0.25 - 3) + 3).toFixed(4)
+        audio.playbackRate = playBack;
 
         //change image source
         document.getElementById(event.target.id).src = "bubbles/bubble" + getRandomInt(1, 18) + ".png";
